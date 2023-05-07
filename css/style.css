@@ -1,0 +1,59 @@
+* {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+body{
+    min-width: 320px;
+    max-width: 1920px;
+    min-height: 640px;
+    max-height: 1080px;
+    width: 100%;
+    height: 100%;
+}
+
+.everything_left{
+    /*background-color: aliceblue;*/
+    
+}
+
+.left{
+    background-color: #2A2A2A;
+    width: 11%;
+    min-width: 111px; /*изменить*/
+    max-width: 222px; /*изменить*/
+    height: 100%;
+    position: absolute;
+    color: aliceblue; /*изменить*/
+    
+}
+
+.clockpage {
+    width: 100%;
+    height: 100%;
+    font-size: 32px; /*разобраться с текстом, почему такая хуйня*/
+    text-align: center;    
+}
+
+.logo {
+    font-size: 50px;
+    font: bolder;
+    text-align: center;
+}
+
+.navigation {
+    font-size: 20px;
+    text-align: center;    
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navigation li a:hover {
+    color: #6C63FF;
+}
