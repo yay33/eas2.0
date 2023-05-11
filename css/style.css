@@ -1,24 +1,19 @@
-* {
-    margin:0;
-    padding:0;
-    list-style-type: none;
-}
-
-html {
-    height: -webkit-fill-available;
-}
-
 .left {
     height: 100vh;
+    width: 17vw;
+    
 }
 
-body{
+body {
     min-width: 320px;
     max-width: 1920px;
     min-height: 100vh;
     min-height: -webkit-fill-available;
     max-height: 1080px;
+    display: flex;
 } 
+
+
 
 .clockpage {
     font-size: 32px; /*разобраться с текстом, почему такая хуйня*/
@@ -30,8 +25,25 @@ body{
 }
 
 .fs {
-    
     font-size: 50px;
     align-items: center;
 }
 
+.nav-pills {
+    --bs-nav-pills-border-radius: var(--bs-border-radius);
+    --bs-nav-pills-link-active-color: #fff;
+    --bs-nav-pills-link-active-bg: #6C63FF;
+}
+
+main {
+    height: 100vh;
+    min-width: 80vw;
+    margin-left: 0.5vw;
+    margin-right: 2.5vw;
+    
+}
+
+h1 {
+    margin-left: 1vw;
+    margin-top: 1vh;
+}

@@ -27,13 +27,13 @@
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">
+            <a href="#" class="nav-link text-white" aria-current="page">
               <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
               Главная
             </a>
           </li>
           <li>
-            <a href="#" class="nav-link text-white">
+            <a href="#" class="nav-link active">
               <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
               Учёт активов
             </a>
@@ -64,11 +64,20 @@
             <strong>Пользователь</strong>
           </a>
           <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-            <li><a class="dropdown-item" href="#">Sign out</a></li>
+            <li><a class="dropdown-item" href="/login.html">Выйти</a></li>
           </ul>
         </div>
       </div>
   </aside>
-  </body>
+  <main class="main"> 
+    <h1 class="name">Учёт активов</h1>
+    <hr>
+    <div class="form-floating">
+      <input type="search" class="form-control rounded-3" id="floatingInput" placeholder="search"> <!--вот здесь я менял форм-контрол-->
+      <label for="floatingInput">search</label>
+    </div>
+  </main>
+  
+</body>
 </html>
 
