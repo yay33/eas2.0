@@ -3,44 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">    
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
     <script src="js/clock.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="/bootstrap/js/bootstrap.js"></script>
+    
     <title>да я в рот ебал...</title>
 </head>
 <body onload="clockTimer();">
   <aside class="left">
-    <div class="everything_left">
-      <div> 
-        <div class="logo"> 
-          EAS123
+      <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+        <div class="logo">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+          <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+          <span class="fs">EAS</span></a>
         </div>
-
         <div class="clockpage">
-            <span id="clock"></span><br />
-            <span id="dayOfWeek"></span>
+          <span id="clock"></span>
+          <span id="dayOfWeek"></span>
+        </div>
+        <hr>
+        <ul class="nav nav-pills flex-column mb-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link active" aria-current="page">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+              Главная
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+              Учёт активов
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+              Админ-панель
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+              Модули
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link text-white">
+              <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+              Настройки
+            </a>
+          </li>
+        </ul>
+        <hr>
+        <div class="dropdown">
+          <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+            <strong>Пользователь</strong>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
         </div>
       </div>
-
-      <div>
-        <nav class="navigation">
-          <ul class="navigation2">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Учёт активов</a></li>
-            <li><a href="#">Админ-панель</a></li>
-            <li><a href="#">Модули</a></li>
-            <li><a href="#">Настройки</a></li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="bottom">
-        Местонахождение<br />Пользователь
-      </div>
-
-
-    </div> 
   </aside>
-</body>
+  </body>
 </html>
 
